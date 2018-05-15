@@ -6,7 +6,7 @@
 
 // ------------------------------------------------------------------------
 
-package com.qq.util.weixin;
+package com.qq.util.weixin.tools;
 
 import java.io.StringReader;
 

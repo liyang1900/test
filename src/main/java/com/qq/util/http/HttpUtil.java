@@ -58,7 +58,6 @@ public class HttpUtil {
 		    e.printStackTrace();
 		}
 	    }
-
 	    if (null != is) {
 		try {
 		    is.close();
@@ -66,10 +65,8 @@ public class HttpUtil {
 		    e.printStackTrace();
 		}
 	    }
-
 	    connection.disconnect();// 关闭远程连接
 	}
-
 	return result;
     }
 }

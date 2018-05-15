@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.qq.util.sign.SignUtil;
-import com.qq.util.weixin.SHA1;
+import com.qq.util.weixin.WxUtil;
 
 /**
  * @Title:
@@ -23,19 +23,14 @@ import com.qq.util.weixin.SHA1;
 public class WeiXinVerifyController {
 
     Logger log = LoggerFactory.getLogger(WeiXinVerifyController.class);
-    
-    private static String appID = "wxbfea9876382f69e2";
-    private static String appsecret = "5ec3c9ba664cca5b5afc950d1606a2af";
-
-    private static String TOKEN = "qwerasdzxc";
-    private static String encodingAesKey = "TwZVSx5KJYdNMcRFN482xCUDbA4sxV9Y3QmiAp7xQWJ";
-    
 
     @RequestMapping(value = "/verifyToken", method = RequestMethod.GET)
     public void index(HttpServletRequest request, HttpServletResponse response, String signature, String timestamp,
 	    String nonce, String echostr) {
-	log.debug("verifyToken", signature);
-	boolean flag = SignUtil.checkSignature(TOKEN, signature, timestamp, nonce);
+	log.debug("verifyToken接口参数：signature:" + signature + ",timestamp=" + timestamp + ",nonce=" + nonce + ",echostr="
+		+ echostr);
+	boolean flag = SignUtil.checkSignature(WxUtil.TOKEN, signature, timestamp, nonce);
+	log.debug("验证结果flag:" + flag);
 	if (flag) {
 	    try {
 		// 验证成功,则原样返回echostr参数内容
@@ -45,4 +40,5 @@ public class WeiXinVerifyController {
 	    }
 	}
     }
+
 }
