@@ -53,6 +53,7 @@ public class TestController {
 	    token = WxUtil.getAccessToken();
 	    log.debug("获取token:" + token);
 	    log.debug("获取exceptionStr长度:" + exceptionStr.length());
+	    log.debug("截取exceptionStr:" + exceptionStr.substring(0, 5));
 	    result = WxUtil.sendMessage(token, userOpenId, message, null);
 	    map.put("result", result);
 	} catch (Exception e) {
