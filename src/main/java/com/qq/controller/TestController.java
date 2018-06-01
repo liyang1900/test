@@ -71,7 +71,7 @@ public class TestController {
      * @param mediaId
      *            上传的图片媒体id
      * @return
-     * @Description: 发送图片1231
+     * @Description: 发送图片1231dsd
      */ 
     @RequestMapping("/sendCustomerImage")
     public Object sendCustomerImage(String userOpenId, String mediaId) {
