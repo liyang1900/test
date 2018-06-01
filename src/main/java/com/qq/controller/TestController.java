@@ -69,7 +69,7 @@ public class TestController {
      * @param userOpenId
      *            用户openId
      * @param mediaId
-     *            上传的图片媒体id
+     *            上传的图片媒体id1231
      * @return
      * @Description: 发送图片1231dsd
      */ 
