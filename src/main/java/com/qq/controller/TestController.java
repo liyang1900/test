@@ -72,7 +72,7 @@ public class TestController {
      *            上传的图片媒体id
      * @return
      * @Description: 发送图片
-     */
+     */ 
     @RequestMapping("/sendCustomerImage")
     public Object sendCustomerImage(String userOpenId, String mediaId) {
 	log.debug("sendCustomerImage接口参数：userOpenId:" + userOpenId + ",mediaId=" + mediaId);
