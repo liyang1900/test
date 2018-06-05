@@ -70,7 +70,7 @@ public class TestController {
      *            用户openId
      * @param mediaId 3211
      *            上传的图片媒体id1231
-     * @return   sdds 666
+     * @return   sdds 66688889999
      * @Description: 发送图片1231dsd
      */ 
     @RequestMapping("/sendCustomerImage")
