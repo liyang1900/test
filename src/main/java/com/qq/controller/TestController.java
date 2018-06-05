@@ -66,7 +66,7 @@ public class TestController {
 
     /**
      * 
-     * @param userOpenIdccccccc
+     * @param userOpenIdccccccc 777
      *            用户openId
      * @param mediaId 3211
      *            上传的图片媒体id1231
