@@ -68,7 +68,7 @@ public class TestController {
      * 
      * @param userOpenIdccccccc
      *            用户openId
-     * @param mediaId
+     * @param mediaId 3211
      *            上传的图片媒体id1231
      * @return   sdds 666
      * @Description: 发送图片1231dsd
